@@ -12,8 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-cd package
-git clone https://github.com/liuran001/openwrt-packages
+echo 'src-git openwrt-packages https://github.com/liuran001/openwrt-packages' >>feeds.conf.default
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
